@@ -18,7 +18,7 @@ const Calculator = {
   divide: function(num1, num2) { return num1 / num2 },
 };
 
-function actionApplyer(num = 0, array = []) {
+function actionApplyer(num, array) {
   if (array !== []) {
     return array.reduce((accumulator, element) => element(accumulator), num);
   } else { return num }
