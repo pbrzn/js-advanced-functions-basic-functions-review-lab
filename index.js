@@ -19,7 +19,5 @@ const Calculator = {
 };
 
 function actionApplyer(num, array) {
-  if (array !== []) {
-    return array.reduce((accumulator, element) => element(accumulator), num);
-  } else { return num }
+  return array.reduce((accumulator, element) => element(accumulator), num);
 };
